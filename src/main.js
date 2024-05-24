@@ -7,6 +7,7 @@ import { router } from './router'
 import { createHead } from '@vueuse/head'
 
 const head = createHead()
+
 const app = createApp(App)
 
 app.component('LayoutDefault', Default)

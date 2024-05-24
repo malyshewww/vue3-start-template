@@ -22,7 +22,6 @@ useHead({
     }
   ]
 })
-
 const counterStore = useCounterStore()
 const counter = computed(() => counterStore.counter)
 const increment = () => counterStore.increment()
@@ -33,6 +32,9 @@ const increment = () => counterStore.increment()
   color: gray;
   @media screen and (max-width: $lg) {
     color: black;
+  }
+  @media screen and (max-width: $lg) {
+    font-size: 20px;
   }
 }
 </style>

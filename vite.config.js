@@ -9,7 +9,9 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      plugins: [postCssSortMediaQueries({ sort: 'desktop-first' })]
+    }),
     createHtmlPlugin({
       minify: true,
       inject: {

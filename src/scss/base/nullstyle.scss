@@ -79,7 +79,7 @@ button {
 button,
 input[type="submit"] {
 	cursor: pointer;
-	@media (min-width: $md) and (any-hover: hover) {
+	@media (any-hover: hover) {
 		&:hover {
 			cursor: pointer;
 		}

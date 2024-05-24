@@ -21,11 +21,4 @@ defineProps({
 })
 </script>
 
-<style lang="scss" scoped>
-h1.msg {
-  color: $gray-900;
-  @media screen and (max-width: $lg) {
-    color: black;
-  }
-}
-</style>
+<style lang="scss"></style>
