@@ -1,0 +1,96 @@
+@use "sass:math";
+// Минимальная ширина страницы
+$minWidth: 320;
+// Ширина полотна (макета)
+$maxWidth: 1920;
+// Ширина ограничивающего контейнера (0 = нет ограничения)
+$maxWidthContainer: 1340;
+
+// Общий отступ у контейнера
+// (30 = по 15px слева и справа, 0 = нет отступа)
+$containerPadding: 40;
+
+// Тип адаптива:
+// 1 = отзывчивость (у контейнера нет брейкпоинтов),
+// 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
+$responsiveType: 1;
+
+// Ширина страбатывания первого брейкпоинта
+$containerWidth: $maxWidthContainer + $containerPadding;
+// Брейкпоинты
+$pc: $containerWidth + px;
+$xs: 479.98px;
+$sm: 576px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1024px;
+$xxl: 1200px;
+$xxxl: 1400px;
+
+// (i) Стили будут применяться ко всем классам содержащим *__container. Например header__container, footer__container и т.д.
+@if ($responsiveType ==1) {
+	// Отзывчивая
+	.container {
+		@if ($maxWidthContainer > 0) {
+			max-width: $maxWidthContainer + px;
+			margin: 0 auto;
+		}
+		@if ($containerPadding > 0) {
+			padding: 0 math.div($containerPadding, 2) + px;
+		}
+	}
+}
+@else {
+	// По брейк-поинтам
+	.container {
+		margin: 0 auto;
+		@if ($maxWidthContainer > 0) {
+			max-width: $maxWidthContainer + px;
+		}
+		@if ($containerPadding > 0) {
+			padding: 0 math.div($containerPadding, 2) + px;
+		}
+		@media (max-width: $xxl) {
+			max-width: 980px;
+		}
+		@media (max-width: $lg) {
+			max-width: 750px;
+		}
+		@media (max-width: $md) {
+			max-width: 620px;
+		}
+		@media (max-width: $sm) {
+			max-width: 100%;
+		}
+	}
+}
+
+// размеры шрифтов
+$fontSize: 16px;
+
+// Основные Цвета
+$mainColor: #000;
+$whiteColor: #ffffff;
+
+$bg-primary: #fff;
+// Шрифты
+$fontWeight: 400;
+$fontFamily: "Montserrat", sans-serif;
+
+
+$primary: #42b983;
+$body-color: #304455;
+$info: #73abfe;
+$gray-100: #f6f6f6;
+$text-muted: #4e6e8e;
+$gray-900: #273849;
+$dark: #273849;
+
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/variables-dark";
+// @import "~bootstrap/scss/maps";
+// @import "~bootstrap/scss/mixins";
+// @import "~bootstrap/scss/utilities";
+
+// $navbar-dark-color: rgba($white, .7);
