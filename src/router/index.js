@@ -1,9 +1,9 @@
-import { createRouter, createMemoryHistory, createWebHistory } from 'vue-router'
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
+
+import Home from '../views/Home.vue'
 
 const baseUrl = import.meta.env.BASE_URL
 const history = import.meta.env.SSR ? createMemoryHistory(baseUrl) : createWebHistory(baseUrl)
-
-import Home from '../views/Home.vue'
 
 const routes = [
   {
@@ -43,6 +43,7 @@ const router = createRouter({
   },
   base: baseUrl
 })
+
 router.beforeEach((to, from, next) => {
   document.title = to.meta?.title ?? 'Название сайта'
   next()

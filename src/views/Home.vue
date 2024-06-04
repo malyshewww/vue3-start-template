@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- <hello-world msg="Welcome" /> -->
     <h1 class="page-title">Home</h1>
     <p>{{ counter }}</p>
     <button @click="increment">счетчик</button>
@@ -9,9 +8,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue'
-import { useHead } from '@vueuse/head'
 import { useCounterStore } from '@/stores/counter'
+import { useHead } from '@vueuse/head'
 
 useHead({
   title: 'Главная',

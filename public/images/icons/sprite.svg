@@ -1,0 +1,12 @@
+<svg>
+	<symbol width="10" height="5" viewbox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg" id="chevron-down-menu">
+		<path d="M1.25 0.777771L5 4.44444L8.75 0.777771" stroke="#336699" stroke-linecap="round" stroke-linejoin="round"></path>
+	</symbol>
+	<symbol width="36" height="16" viewbox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-right-mob">
+		<path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM34.7071 8.70711C35.0976 8.31658 35.0976 7.68342 34.7071 7.29289L28.3431 0.928932C27.9526 0.538408 27.3195 0.538408 26.9289 0.928932C26.5384 1.31946 26.5384 1.95262 26.9289 2.34315L32.5858 8L26.9289 13.6569C26.5384 14.0474 26.5384 14.6805 26.9289 15.0711C27.3195 15.4616 27.9526 15.4616 28.3431 15.0711L34.7071 8.70711ZM1 9H34V7H1V9Z" fill="#212226"></path>
+	</symbol>
+	<symbol width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="close">
+		<rect width="20.4529" height="2" rx="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 15.9383 14.524)" fill="#212226"></rect>
+		<rect x="0.0616455" y="14.524" width="20.4529" height="2" rx="1" transform="rotate(-45 0.0616455 14.524)" fill="#212226"></rect>
+	</symbol>
+</svg>

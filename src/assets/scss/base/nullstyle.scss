@@ -94,7 +94,9 @@ a {
 	}
 }
 input.error,
-textarea.error {
+input.form-item--error,
+textarea.error,
+textarea.form-item--error {
 	border-color: red;
 }
 a:link,

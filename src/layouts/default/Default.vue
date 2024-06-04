@@ -1,16 +1,16 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <AppHeader />
     <main class="main">
       <slot />
     </main>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
 <script setup>
-import Footer from '@/components/Footer.vue'
-import Header from '@/components/Header.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import AppHeader from '@/components/AppHeader.vue'
 </script>
 
 <style lang="scss">

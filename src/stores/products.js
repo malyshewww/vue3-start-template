@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+
 export const productsStore = defineStore({
   id: 'products',
   state: () => ({

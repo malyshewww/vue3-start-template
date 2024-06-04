@@ -4,14 +4,16 @@
   </component>
 </template>
 
-<script>
-import '@/scss/app.scss'
+<script setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+import '@/assets/scss/app.scss'
 
-export default {
-  computed: {
-    layout() {
-      return `layout-${this.$route.meta.layout || 'default'}`
-    }
-  }
-}
+const route = useRoute()
+
+const layout = computed(() => {
+  return `layout-${route.meta.layout || 'default'}`
+})
 </script>
+
+<style lang="scss"></style>
